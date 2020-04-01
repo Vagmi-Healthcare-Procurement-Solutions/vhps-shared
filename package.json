@@ -1,7 +1,13 @@
 {
   "name": "vhps-shared",
   "nativescript": {
-    "id": "org.nativescript.vhpsshared"
+    "id": "org.nativescript.vhpsshared",
+    "tns-ios": {
+      "version": "6.5.0"
+    },
+    "tns-android": {
+      "version": "6.5.0"
+    }
   },
   "version": "0.0.0",
   "scripts": {
