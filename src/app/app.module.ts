@@ -6,6 +6,7 @@ import { AppComponent } from '@src/app/app.component';
 import { HomeComponent } from '@src/app/views/home/home.component';
 import { LoginComponent } from '@src/app/views/login/login.component';
 import { SignupComponent } from '@src/app/views/signup/signup.component';
+import { OffersComponent } from '@src/app/components/home/offers/offers.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { SignupComponent } from '@src/app/views/signup/signup.component';
     HomeComponent,
     LoginComponent,
     SignupComponent,
+    OffersComponent,
   ],
   imports: [
     BrowserModule,

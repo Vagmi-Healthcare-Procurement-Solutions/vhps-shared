@@ -21,6 +21,10 @@ export class LoginComponent implements OnInit {
     this.password.nativeElement.focus();
   }
 
+  onLogin() {
+    this.router.navigate(["home"], {clearHistory: true});
+  }
+
   onSignUp() {
     this.router.navigate(["signup"]);
   }
