@@ -1,0 +1,12 @@
+<StackLayout>
+    <Label text="Products" class="h2"></Label>
+    <GridLayout rows="auto, *, *" *ngFor="let product of productsList" class="container">
+    <Image row="0" [src]="product.thumbnail" class="thumbnail"></Image>
+    <Label row="1" [text]="product.name" textWrap="true" class="h5 name"></Label>
+    <GridLayout row="2" columns="auto, auto, auto">
+        <Label col="0" [text]="product.price" class="old-price"></Label>
+        <Label col="1" text="|" class="separator"></Label>
+        <Label col="2" [text]="product.actualPrice" class="current-price"></Label>
+    </GridLayout>        
+    </GridLayout>
+</StackLayout>

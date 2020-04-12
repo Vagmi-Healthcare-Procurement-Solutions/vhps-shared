@@ -1,0 +1,29 @@
+@import '../../../../app-common';
+
+.container {
+    border-width: 1;
+    border-color: $primary;
+    margin: 10;
+    padding: 10;
+
+    .thumbnail {
+        height: 200;
+    }
+
+    .name {
+        font-weight: bold;
+    }
+
+    .old-price {
+        color: gray;
+        text-decoration: line-through;
+    }
+
+    .separator {
+        padding: 0 10;
+    }
+
+    .current-price {
+        line-height: 100;
+    }
+}

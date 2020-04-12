@@ -1,0 +1,9 @@
+@import '../../../../app-common';
+
+.action-bar {
+    background-color: $primary;
+
+    Label {
+        color: $accent;
+    }
+}
