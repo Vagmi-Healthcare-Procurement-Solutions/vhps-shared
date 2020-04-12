@@ -1,0 +1,30 @@
+<GridLayout>
+  <StackLayout class="form">
+    <GridLayout rows="auto">
+        <Label row="0" text="VHPS" textWrap="true" class="brand-name"></Label>
+    </GridLayout>
+    <GridLayout rows="auto, auto">
+        <Label row="0" text="First name:" class="text-label"></Label>
+        <TextField row="1" text="firstname" returnKeyType="next" maxLength="20" autocorrect="false" class="text-field" (returnPressEvent)="focusPassword()"></TextField>
+    </GridLayout>
+    <GridLayout rows="auto, auto">
+        <Label row="0" text="Last name:" class="text-label"></Label>
+        <TextField row="1" text="lastname" returnKeyType="next" maxLength="20" autocorrect="false" class="text-field" (returnPressEvent)="focusPassword()"></TextField>
+    </GridLayout>
+    <GridLayout rows="auto, auto">
+        <Label row="0" text="Email:" class="text-label"></Label>
+        <TextField row="1" text="email" returnKeyType="next" maxLength="20" autocorrect="false" class="text-field" (returnPressEvent)="focusPassword()"></TextField>
+    </GridLayout>
+    <GridLayout rows="auto, auto">
+        <Label row="0" text="User name:" class="text-label"></Label>
+        <TextField row="1" text="user" returnKeyType="next" maxLength="20" autocorrect="false" class="text-field" (returnPressEvent)="focusPassword()"></TextField>
+    </GridLayout>
+    <GridLayout rows="auto, auto">
+        <Label row="0" text="Password:" class="text-label"></Label>
+        <TextField #password row="1" text="password" returnKeyType="send" maxLength="20" secure="true" class="text-field"></TextField>
+    </GridLayout>
+    <Button text="Sign up" class="btn btn-primary"></Button>
+    <Label text="Sign in"
+        class="btn btn-secondary" (tap)="onSignIn()"></Label>
+  </StackLayout>
+</GridLayout>

@@ -1,21 +1,59 @@
 @import "~@nativescript/theme/core";
-@import "~@nativescript/theme/blue";
+@import "~@nativescript/theme/lemon";
+
+$primary: #75571e;
 
 // Place any CSS rules you want to apply on both iOS and Android here.
 // This is where the vast majority of your CSS code goes.
 
 // Font icon class
-.fab {
-    font-family: "Font Awesome 5 Brands", "fa-brands-400";
-    font-weight: 400;
-}
 
-.fas {
-    font-family: "Font Awesome 5 Free", "fa-solid-900";
-    font-weight: 900;
-}
-
-.far {
+.fa {
     font-family: "Font Awesome 5 Free", "fa-regular-400";
     font-weight: 400;
+}
+
+.brand-name {
+    color: $primary;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 30;
+}
+
+.text-field {
+    border-color: $primary;
+    border-width: 1;
+    border-radius: 10%;
+    padding: 10;
+    font-size: large;
+}
+
+.text-label {
+    margin-left: 20;
+    font-size: x-small;
+}
+
+.btn {
+    height: 50;
+    margin: 10 0;
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+    border-width: 1;
+    border-radius: 20%;
+    width: 91%;
+}
+
+.btn-secondary {
+    color: $primary;
+    text-align: center;
+}
+
+.form {
+    vertical-align: middle;
+    margin-left: 30;
+    margin-right: 30;
 }
