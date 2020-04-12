@@ -6,4 +6,24 @@
     Label {
         color: $accent;
     }
+
+    .search-container {
+        background-color: $accent;
+        color: $primary;
+        height: 35;
+        margin: 0 10 10 0;
+
+        .search-icon {
+            color: $secondary;
+            padding-left: 10;
+            padding-top: 10;
+            padding-right: 0;
+        }
+
+        .search-control {
+            color: $secondary;
+            padding-right: 10;
+            padding-top: 10;
+        }
+    }
 }

@@ -1,5 +1,15 @@
 <ActionBar class="action-bar">
-    <GridLayout>
-      <Label text="VHPS" textWrap="false"></Label>
+    <GridLayout rows="auto, auto">
+      <GridLayout row="0" columns="auto, *, auto">
+        <Label col="0" text="&#xf0c9;" class="fa"></Label>
+        <Label col="1" text="VHPS"></Label>
+        <Label col="2" text="&#xf217;" class="fa"></Label>
+      </GridLayout>
+      <GridLayout row="1" columns="auto, *, auto" class="search-container">
+        <Label col="0" text="&#xf002;" class="fa search-icon"></Label>
+        <TextField col="1" hint="" text=""></TextField>
+        <Label col="2" text="&#xf061;" class="fa search-control"></Label>
+        
+      </GridLayout>
     </GridLayout>
 </ActionBar>
