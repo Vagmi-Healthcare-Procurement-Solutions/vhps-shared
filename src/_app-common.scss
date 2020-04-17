@@ -1,7 +1,8 @@
 @import "~@nativescript/theme/core";
 @import "~@nativescript/theme/lemon";
 
-$primary: #75571e;
+$primary: #1e2775;
+$accent: $white;
 
 // Place any CSS rules you want to apply on both iOS and Android here.
 // This is where the vast majority of your CSS code goes.
@@ -9,8 +10,7 @@ $primary: #75571e;
 // Font icon class
 
 .fa {
-    font-family: "Font Awesome 5 Free", "fa-regular-400";
-    font-weight: 400;
+    font-family: 'FontAwesome', 'Font-Awesome';
 }
 
 .brand-name {

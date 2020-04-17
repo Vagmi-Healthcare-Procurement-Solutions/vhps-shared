@@ -1,0 +1,9 @@
+// Import common styles
+@import '../../../../app-common';
+
+.offer-container {
+    border-width: 2;
+    border-color: $primary;
+    padding: 10;
+    margin: 10;
+}

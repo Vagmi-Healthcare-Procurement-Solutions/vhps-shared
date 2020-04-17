@@ -11,7 +11,7 @@
             <Label row="0" text="Password:" class="text-label"></Label>
             <TextField #password row="1" text="password" returnKeyType="send" maxLength="20" secure="true" class="text-field"></TextField>
         </GridLayout>
-        <Button text="Login" class="btn btn-primary"></Button>
+        <Button text="Login" class="btn btn-primary" (tap)="onLogin()"></Button>
         <Label text="Don't haven an account or forget it?"
             class="btn btn-secondary" (tap)="onSignUp()"></Label>
     </StackLayout>

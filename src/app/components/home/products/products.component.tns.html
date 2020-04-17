@@ -1,0 +1,22 @@
+<StackLayout>
+    <Label text="Products" class="h2 products-label"></Label>
+    <FlexboxLayout flexWrap="wrap">
+        <GridLayout rows="auto, auto" *ngFor="let product of productsList" class="container" (tap)="goToDetails(product)">
+            <Image row="0" [src]="product.thumbnail" class="thumbnail"></Image>
+            <GridLayout row="1" rows="auto, auto">
+                <Label row="0" [text]="product.name" textWrap="true" class="h5 name"></Label>
+                <GridLayout row="1" columns="auto, auto, auto, auto, auto"> 
+                    <Label col="0" [text]="product.price" class="old-price"></Label>
+                    <Label col="1" text="|" class="separator"></Label>
+                    <Label col="2" [text]="product.actualPrice" class="current-price"></Label>
+                    <Label col="3" text="|" class="separator"></Label>
+                    <FlexboxLayout col="4" class="discount">
+                        <Label col="4" [text]="product.discount"></Label>
+                        <Label text="%"></Label>
+                    </FlexboxLayout>
+                </GridLayout>
+            </GridLayout>
+        </GridLayout>
+    </FlexboxLayout>
+
+</StackLayout>
