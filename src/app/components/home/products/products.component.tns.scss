@@ -1,13 +1,20 @@
 @import '../../../../app-common';
 
+.products-label {
+    margin: 10;
+    color: $primary;
+}
+
 .container {
-    border-width: 1;
-    border-color: $primary;
+    border-width: 2;
+    border-color: lighten($primary, 10%);
+    border-radius: 5;
     margin: 10;
     padding: 10;
+    width: 45%;
 
     .thumbnail {
-        height: 200;
+        height: 100;
     }
 
     .name {
@@ -20,10 +27,20 @@
     }
 
     .separator {
-        padding: 0 10;
+        padding: 0 3;
     }
 
     .current-price {
         line-height: 100;
+    }
+
+    .discount {
+        background-color: lighten($primary, 30%);
+        border-color: $secondary;
+        border-radius: 30;
+        color: $accent;
+        width: 50;
+        font-weight: bold;
+        justify-content: center;
     }
 }

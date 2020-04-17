@@ -1,0 +1,21 @@
+<app-header></app-header>
+<ScrollView>
+    <StackLayout class="detail-container">
+      <Label [text]="selectedProduct.name" textWrap="true" class="h2 product-name"></Label>
+      <Image [src]="selectedProduct.thumbnail" class="product-image"></Image>
+      <Label [text]="sku" textWrap="true"></Label>
+      <StackLayout *ngIf="selectedProduct.features">
+        <Label text="Product Features:" class="h3"></Label>
+        <Label text="* {{feature}}" textWrap="true" *ngFor="let feature of selectedProduct.features" class="feature-item"></Label>
+      </StackLayout>
+      <StackLayout *ngIf="selectedProduct.specification" class="inner-layout">
+        <Label text="Specification:" class="h3"></Label>
+        <Label text="* {{specification.key}}: {{specification.value}}" 
+          textWrap="true" 
+          *ngFor="let specification of selectedProduct.specification" 
+          class="feature-item"></Label>
+      </StackLayout>
+      <Button text="Add to cart" class="btn btn-primary"></Button>
+      <Button text="Go back" class="btn btn-secondary"></Button>
+    </StackLayout>
+</ScrollView>

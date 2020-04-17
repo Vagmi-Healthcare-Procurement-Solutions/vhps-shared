@@ -8,6 +8,7 @@ import { LoginComponent } from '@src/app/views/login/login.component';
 import { SignupComponent } from '@src/app/views/signup/signup.component';
 import { OffersComponent } from '@src/app/components/home/offers/offers.component';
 import { ProductsComponent } from '@src/app/components/home/products/products.component';
+import { DetailsComponent } from '@src/app/views/product/details/details.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ProductsComponent } from '@src/app/components/home/products/products.co
     SignupComponent,
     OffersComponent,
     ProductsComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,

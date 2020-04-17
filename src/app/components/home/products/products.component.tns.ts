@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '@src/app/shared/products/products.service';
 import { Product } from '@src/app/shared/products/model/product';
+import { RouterExtensions } from 'nativescript-angular/router';
 
 @Component({
   selector: 'app-products',
@@ -11,10 +12,14 @@ import { Product } from '@src/app/shared/products/model/product';
 export class ProductsComponent implements OnInit {
   productsList: Product[];
 
-  constructor(private productsService: ProductsService) { }
+  constructor(private router: RouterExtensions, private productsService: ProductsService) { }
 
   ngOnInit() {
-    this.productsList = this.productsService.getAll();
+    this.productsService.getAll().subscribe(productsList => this.productsList = productsList);
+  }
+
+  goToDetails(product: Product): any {
+    this.router.navigate(['details', product.id]);
   }
 
 }

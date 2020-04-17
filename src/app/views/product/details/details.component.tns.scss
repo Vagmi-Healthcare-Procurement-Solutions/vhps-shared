@@ -1,0 +1,22 @@
+@import '../../../../app-common';
+
+.detail-container {
+    margin: 10 10;
+
+    .feature-item {
+        margin-left: 20;
+        margin-bottom: 5;
+    }
+
+    .inner-layout {
+        margin-bottom: 20;
+    }
+
+    .product-name {
+        color: $primary;
+    }
+
+    .product-image {
+        height: 300;
+    }
+}

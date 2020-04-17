@@ -7,11 +7,19 @@
         color: $accent;
     }
 
+    .cta-icon {
+        font-size: 25;
+    }
+
+    .call-icon {
+        margin-right: 20;
+    }
+
     .search-container {
         background-color: $accent;
         color: $primary;
-        height: 35;
-        margin: 0 10 10 0;
+        height: 40;
+        margin: 0 10 20 0;
 
         .search-icon {
             color: $secondary;
@@ -23,7 +31,7 @@
         .search-control {
             color: $secondary;
             padding-right: 10;
-            padding-top: 10;
+            padding-top: 10;;
         }
     }
 }

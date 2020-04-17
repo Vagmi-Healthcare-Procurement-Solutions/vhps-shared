@@ -9,6 +9,7 @@ import { OffersComponent } from '@src/app/components/home/offers/offers.componen
 import { SignupComponent } from '@src/app/views/signup/signup.component';
 import { SharedModule } from '@src/app/shared/shared.module';
 import { ProductsComponent } from '@src/app/components/home/products/products.component';
+import { DetailsComponent } from '@src/app/views/product/details/details.component';
 
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -25,6 +26,7 @@ import { ProductsComponent } from '@src/app/components/home/products/products.co
     SignupComponent,
     OffersComponent,
     ProductsComponent,
+    DetailsComponent,
   ],
   imports: [
     NativeScriptModule,
