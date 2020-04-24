@@ -1,0 +1,19 @@
+@import '../../../../app-common';
+
+.container {
+    flex: 1;
+    margin: 10;
+
+    .icon {
+        font-size: 45;
+        background-color: $primary;
+        border-color: $primary;
+        border-radius: 15;
+        padding: 5 12 10 12;
+        color: $accent;
+    }
+    .text {
+        color: $primary;
+        font-size: 10;
+    }
+}
