@@ -3,6 +3,12 @@
     <StackLayout class="detail-container">
       <Label [text]="selectedProduct.name" textWrap="true" class="h2 product-name"></Label>
       <Image [src]="selectedProduct.thumbnail" class="product-image"></Image>
+      <FlexboxLayout flexDirection="row">
+        <Button text="-" (tap)="removeItem()"></Button>
+        <Label [text]="quantity" alignSelf="center"></Label>
+        <Button text="+" (tap)="addItem()"></Button>
+        <Button text="Add to cart" class="btn btn-primary add-to-cart-button" (tap)="addToCart()"></Button>
+      </FlexboxLayout>
       <Label [text]="sku" textWrap="true"></Label>
       <StackLayout *ngIf="selectedProduct.features">
         <Label text="Product Features:" class="h3"></Label>
@@ -15,7 +21,5 @@
           *ngFor="let specification of selectedProduct.specification" 
           class="feature-item"></Label>
       </StackLayout>
-      <Button text="Add to cart" class="btn btn-primary"></Button>
-      <Button text="Go back" class="btn btn-secondary"></Button>
     </StackLayout>
 </ScrollView>

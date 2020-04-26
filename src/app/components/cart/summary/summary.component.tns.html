@@ -1,0 +1,22 @@
+<StackLayout class="summary-container">
+  <Label text="Checkout Summary" class="h2 p-l-10"></Label>
+  <Label text="What you will pay today" class="h5 p-l-10"></Label>
+  <GridLayout columns="*, auto" class="h4 summary-item">
+    <Label col="0" text="Fees" textWrap="true"></Label>
+    <Label col="1" text="3200" textWrap="true"></Label>
+  </GridLayout>
+  <GridLayout columns="*, auto" class="h4 summary-item">
+    <Label col="0" text="Shipping" textWrap="true"></Label>
+    <Label col="1" text="200" textWrap="true"></Label>
+  </GridLayout>
+  <GridLayout columns="*, auto" class="h4 summary-item">
+    <Label col="0" text="Discount voucher" textWrap="true"></Label>
+    <Label col="1" text="-200" textWrap="true"></Label>
+  </GridLayout>
+  <GridLayout columns="*, auto" class="h4 summary-total">
+    <Label col="0" text="Total due today" textWrap="true"></Label>
+    <Label col="1" text="3200" textWrap="true"></Label>
+  </GridLayout>
+  <Button text="Proceed to checkout" class="btn btn-primary"></Button>
+  <Button text="Continue shopping" class="btn btn-secondary" (tap)="continueShopping()"></Button>
+</StackLayout>

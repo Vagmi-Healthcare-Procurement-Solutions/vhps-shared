@@ -1,0 +1,31 @@
+@import '../../../../app-common';
+
+.cart-product-container {
+    margin: 5;
+    padding: 0 10;
+
+    .cart-product-section {
+        background-color: $white;
+        border-radius: 4;
+        padding: 10 0;
+        margin-bottom: 5;
+
+        .cart-product-separator {
+            padding: 0 10;
+            border-bottom-width: 1;
+            border-bottom-color: lighten($primary, 60%);
+
+            .cart-image {
+                width: 130;
+            }
+
+            .cart-product-name {
+                font-weight: bold;
+            }
+        }
+
+        .cart-total-price {
+            padding: 0 10;
+        }
+    }
+}

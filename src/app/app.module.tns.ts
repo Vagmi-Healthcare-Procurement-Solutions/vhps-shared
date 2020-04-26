@@ -12,6 +12,10 @@ import { ProductsComponent } from '@src/app/components/home/products/products.co
 import { DetailsComponent } from '@src/app/views/product/details/details.component';
 import { CategoriesComponent } from '@src/app/components/home/categories/categories.component';
 import { BrandsComponent } from '@src/app/components/home/brands/brands.component';
+import { CartComponent } from '@src/app/views/cart/cart.component';
+import { AdvertisersComponent } from '@src/app/components/home/advertisers/advertisers/advertisers.component';
+import { SummaryComponent } from '@src/app/components/cart/summary/summary.component';
+import { CartProductComponent } from '@src/app/components/cart/cart-product/cart-product.component';
 
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -31,6 +35,10 @@ import { BrandsComponent } from '@src/app/components/home/brands/brands.componen
     DetailsComponent,
     CategoriesComponent,
     BrandsComponent,
+    CartComponent,
+    AdvertisersComponent,
+    SummaryComponent,
+    CartProductComponent,
   ],
   imports: [
     NativeScriptModule,

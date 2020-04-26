@@ -1,0 +1,12 @@
+@import '../../../app-common';
+
+.cart-container {
+
+    .cart-items-container {
+        background-color: lighten($primary, 60%);
+        border-color: lighten($primary, 60%);
+        border-width: 1;
+        border-radius: 1;
+        padding: 10 0;
+    }
+}

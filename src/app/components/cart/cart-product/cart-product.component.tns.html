@@ -1,0 +1,31 @@
+<StackLayout class="cart-product-container">
+    <StackLayout class="cart-product-section">
+        <GridLayout columns="auto, *" class="cart-product-separator">
+            <Image col="0" [src]="product.thumbnail" class="cart-image"></Image>
+            <GridLayout col="1" rows="auto, *, auto">
+                <Label row="0" [text]="product.name" textWrap="true" class="h4 cart-product-name"></Label>
+                <Label row="1" [text]="product.description" textWrap="true" class=""></Label>
+                <GridLayout row="2" columns="*, *">
+                  <Label col="0" text="Buying options?" textWrap="true"></Label>
+                  <Label col="1" text="Delete" textWrap="true"></Label>
+                </GridLayout>
+            </GridLayout>
+        </GridLayout>
+
+        <GridLayout columns="*, auto" class="cart-product-separator">
+            <FlexboxLayout col="0" alignItems="center">
+                <Label text="Quantity" textWrap="true"></Label>
+            </FlexboxLayout>
+            <FlexboxLayout col="1">
+                <Button text="-"></Button>
+                <Label text="200" textWrap="true" alignSelf="center"></Label>
+                <Button text="+"></Button>
+            </FlexboxLayout>
+        </GridLayout>
+
+        <GridLayout columns="*, auto" class="cart-total-price">
+            <Label col="0" text="Total price" textWrap="true"></Label>
+            <Label col="1" [text]="product.price" textWrap="true"></Label>
+        </GridLayout>
+    </StackLayout>
+</StackLayout>
