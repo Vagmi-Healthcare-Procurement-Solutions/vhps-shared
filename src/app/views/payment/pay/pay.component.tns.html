@@ -1,0 +1,21 @@
+<app-header></app-header>
+<ScrollView>
+    <StackLayout>
+        <StackLayout class="pay-container">
+            <StackLayout class="pay-card">
+                <Label text="Payment method" textWrap="true" class="separator title"></Label>
+                <Label text="Payment options here" textWrap="true"></Label>
+                
+            </StackLayout>
+        </StackLayout>
+        <StackLayout class="pay-container">
+            <StackLayout class="pay-card">
+                <Label text="Delivery method" textWrap="true" class="separator title"></Label>
+                <Label text="Delivery options here" textWrap="true"></Label>
+                
+            </StackLayout>
+        </StackLayout>
+        <Button text="Pay now" class="btn btn-primary" (tap)="goToConfirmation()"></Button>
+        <Button text="Continue shopping" class="btn btn-secondary" (tap)="continueShopping()"></Button>
+    </StackLayout>
+</ScrollView>

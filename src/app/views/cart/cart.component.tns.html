@@ -1,9 +1,15 @@
 <app-header></app-header>
 <ScrollView>
-    <StackLayout class="cart-container">
+    <StackLayout class="cart-container" *ngIf="isCartFull()">
       <StackLayout class="cart-items-container">
-        <app-cart-product [product]="cartProduct" *ngFor="let cartProduct of products"></app-cart-product>
+        <app-cart-product [product]="cartProduct" *ngFor="let cartProduct of products" (delete)="onDelete($event)"></app-cart-product>
       </StackLayout>
       <app-summary></app-summary>
+    </StackLayout>
+    <StackLayout *ngIf="!isCartFull()" class="cart-container">
+      <StackLayout class="cart-items-container">
+        <Label text="Your Cart is empty" textWrap="true" textAlignment="center" class="h2"></Label>
+      </StackLayout>
+      <Button text="Continue shopping" class="btn btn-secondary" (tap)="continueShopping()"></Button>
     </StackLayout>
 </ScrollView>
