@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as TNSPhone from 'nativescript-phone';
+import { RouterExtensions } from 'nativescript-angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,9 +10,13 @@ import * as TNSPhone from 'nativescript-phone';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: RouterExtensions) { }
 
   ngOnInit() {
+  }
+  
+  goToCart() {
+    this.router.navigate(["cart"]);
   }
 
   public callNow() {

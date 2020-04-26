@@ -11,6 +11,8 @@ import { ProductsComponent } from '@src/app/components/home/products/products.co
 import { DetailsComponent } from '@src/app/views/product/details/details.component';
 import { CategoriesComponent } from '@src/app/components/home/categories/categories.component';
 import { BrandsComponent } from '@src/app/components/home/brands/brands.component';
+import { CartComponent } from '@src/app/views/cart/cart.component';
+import { AdvertisersComponent } from '@src/app/components/home/advertisers/advertisers/advertisers.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { BrandsComponent } from '@src/app/components/home/brands/brands.componen
     DetailsComponent,
     CategoriesComponent,
     BrandsComponent,
+    CartComponent,
+    AdvertisersComponent,
   ],
   imports: [
     BrowserModule,
