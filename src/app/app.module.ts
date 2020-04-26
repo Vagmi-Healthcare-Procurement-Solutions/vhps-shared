@@ -9,6 +9,8 @@ import { SignupComponent } from '@src/app/views/signup/signup.component';
 import { OffersComponent } from '@src/app/components/home/offers/offers.component';
 import { ProductsComponent } from '@src/app/components/home/products/products.component';
 import { DetailsComponent } from '@src/app/views/product/details/details.component';
+import { CartComponent } from '@src/app/views/cart/cart.component';
+import { AdvertisersComponent } from '@src/app/components/home/advertisers/advertisers/advertisers.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { DetailsComponent } from '@src/app/views/product/details/details.compone
     OffersComponent,
     ProductsComponent,
     DetailsComponent,
+    CartComponent,
+    AdvertisersComponent,
   ],
   imports: [
     BrowserModule,
