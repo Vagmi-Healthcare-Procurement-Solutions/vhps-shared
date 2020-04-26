@@ -12,6 +12,7 @@ import { RouterExtensions } from "nativescript-angular/router";
 })
 export class DetailsComponent implements OnInit {
   selectedProduct: Product;
+  quantity: number = 1;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -26,6 +27,14 @@ export class DetailsComponent implements OnInit {
         .get(productId)
         .subscribe((product) => (this.selectedProduct = product));
     });
+  }
+
+  addItem() {
+    this.quantity++;
+  }
+
+  removeItem() {
+    this.quantity--;
   }
 
   addToCart() {

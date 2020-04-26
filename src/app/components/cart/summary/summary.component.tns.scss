@@ -1,0 +1,19 @@
+@import '../../../../app-common';
+
+.summary-container {
+    color: $primary;
+
+    .summary-item {
+        margin: 0 10 10 10;
+        padding-bottom: 5;
+        border-bottom-width: 1;
+        border-style: solid;
+        border-bottom-style: dashed;
+    }
+
+    .summary-total {
+        margin: 0 10 10 10;
+        padding-bottom: 5;
+        font-size: 18;
+    }
+}

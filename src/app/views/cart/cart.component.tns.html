@@ -1,4 +1,9 @@
 <app-header></app-header>
-<StackLayout>
-  <Label text="test"></Label>
-</StackLayout>
+<ScrollView>
+    <StackLayout class="cart-container">
+      <StackLayout class="cart-items-container">
+        <app-cart-product [product]="cartProduct" *ngFor="let cartProduct of products"></app-cart-product>
+      </StackLayout>
+      <app-summary></app-summary>
+    </StackLayout>
+</ScrollView>

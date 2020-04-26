@@ -13,6 +13,8 @@ import { CategoriesComponent } from '@src/app/components/home/categories/categor
 import { BrandsComponent } from '@src/app/components/home/brands/brands.component';
 import { CartComponent } from '@src/app/views/cart/cart.component';
 import { AdvertisersComponent } from '@src/app/components/home/advertisers/advertisers/advertisers.component';
+import { SummaryComponent } from '@src/app/components/cart/summary/summary.component';
+import { CartProductComponent } from '@src/app/components/cart/cart-product/cart-product.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { AdvertisersComponent } from '@src/app/components/home/advertisers/adver
     BrandsComponent,
     CartComponent,
     AdvertisersComponent,
+    SummaryComponent,
+    CartProductComponent,
   ],
   imports: [
     BrowserModule,
