@@ -1,5 +1,5 @@
 <StackLayout>
-    <Label text="Products" class="h2 products-label"></Label>
+    <Label text="Products" class="h2 header-section-label"></Label>
     <FlexboxLayout flexWrap="wrap">
         <GridLayout rows="auto, auto" *ngFor="let product of productsList" class="container" (tap)="goToDetails(product)">
             <Image row="0" [src]="product.thumbnail" class="thumbnail"></Image>
