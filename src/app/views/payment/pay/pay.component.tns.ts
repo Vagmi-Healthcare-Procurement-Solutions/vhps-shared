@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { RouterExtensions } from 'nativescript-angular/router';
 
 @Component({
-  selector: 'app-summary',
-  templateUrl: './summary.component.html',
-  styleUrls: ['./summary.component.scss'],
+  selector: 'app-pay',
+  templateUrl: './pay.component.html',
+  styleUrls: ['./pay.component.scss'],
   moduleId: module.id
 })
-export class SummaryComponent implements OnInit {
+export class PayComponent implements OnInit {
 
   constructor(private router: RouterExtensions) { }
 
@@ -18,8 +18,7 @@ export class SummaryComponent implements OnInit {
     this.router.navigate(["home"]);
   }
 
-  goToPayment() {
-    this.router.navigate(["payment"]);
+  goToConfirmation() {
+    this.router.navigate(["paymentConfirmation"]);
   }
-
 }

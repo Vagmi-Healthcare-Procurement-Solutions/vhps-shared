@@ -16,7 +16,8 @@ import { CartComponent } from '@src/app/views/cart/cart.component';
 import { AdvertisersComponent } from '@src/app/components/home/advertisers/advertisers/advertisers.component';
 import { SummaryComponent } from '@src/app/components/cart/summary/summary.component';
 import { CartProductComponent } from '@src/app/components/cart/cart-product/cart-product.component';
-
+import { PayComponent } from '@src/app/views/payment/pay/pay.component';
+import { PaymentConfirmationComponent } from '@src/app/views/payment/payment-confirmation/payment-confirmation.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from 'nativescript-angular/forms';
@@ -39,6 +40,8 @@ import { CartProductComponent } from '@src/app/components/cart/cart-product/cart
     AdvertisersComponent,
     SummaryComponent,
     CartProductComponent,
+    PayComponent,
+    PaymentConfirmationComponent,
   ],
   imports: [
     NativeScriptModule,

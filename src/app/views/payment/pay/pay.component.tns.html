@@ -1,0 +1,73 @@
+<app-header></app-header>
+<ScrollView>
+    <StackLayout>
+        <StackLayout class="pay-container">
+            <StackLayout class="pay-card">
+                <Label text="Payment method" textWrap="true" class="separator title"></Label>
+                <StackLayout class="internal-container ">
+                    <Label text="Select your payment method" textWrap="true" class="h4 p-t-10"></Label>
+                    <FlexboxLayout class="card-item">
+                        <Image src="https://pngimg.com/uploads/visa/visa_PNG30.png" class="card-image"></Image>
+                        <Label text="**** 1234" textWrap="true" class="card-description"></Label>
+                        <Label text="JOHN DOE" textWrap="true" class="card-description"></Label>
+                        <Label text="02/25" textWrap="true" class="card-description"></Label>
+                    </FlexboxLayout>
+                    <FlexboxLayout class="card-item">
+                        <Image src="https://upload.wikimedia.org/wikipedia/commons/7/72/MasterCard_early_1990s_logo.png"
+                            class="card-image"></Image>
+                        <Label text="**** 4567" textWrap="true" class="card-description"></Label>
+                        <Label text="JOHN DOE" textWrap="true" class="card-description"></Label>
+                        <Label text="02/26" textWrap="true" class="card-description"></Label>
+                    </FlexboxLayout>
+                </StackLayout>
+                <StackLayout class="internal-container">
+                    <Label text="Another method" textWrap="true" class="h4 p-t-10"></Label>
+                    <GridLayout columns="*, *">
+                        <Button col="0" class="btn btn-success" text="Add more cards"></Button>
+                        <Button col="1" class="btn btn-error" text="Not banking"></Button>
+                    </GridLayout>
+                </StackLayout>
+                <StackLayout class="internal-container">
+                    <Label text="Pay on delivery" textWrap="true" class="h4 p-t-10"></Label>
+                    <FlexboxLayout class="card-item selected">
+                        <Label text="Select payment on delivery" textWrap="true" class="card-description"></Label>
+                    </FlexboxLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout class="pay-container">
+            <StackLayout class="pay-card">
+                <Label text="Delivery method" textWrap="true" class="separator title"></Label>
+                <StackLayout class="internal-container">
+                    <StackLayout class="card-item selected">
+                        <Label text="Some street #123" textWrap="true"></Label>
+                        <Label text="Address 2" textWrap="true"></Label>
+                        <Label text="Some city" textWrap="true"></Label>
+                        <Label text="Some country" textWrap="true"></Label>
+                        <Label text="Some zip code" textWrap="true"></Label>
+                    </StackLayout>
+                    <StackLayout class="card-item">
+                        <Label text="Some street #123" textWrap="true"></Label>
+                        <Label text="Address 2" textWrap="true"></Label>
+                        <Label text="Some city" textWrap="true"></Label>
+                        <Label text="Some country" textWrap="true"></Label>
+                        <Label text="Some zip code" textWrap="true"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout class="pay-container">
+            <StackLayout class="pay-card">
+                <Label text="Your balance" textWrap="true" class="separator title"></Label>
+                <StackLayout class="internal-container">
+                  <GridLayout columns="*, auto">
+                    <Label col="0" text="Total" textWrap="true"></Label>
+                    <Label col="1" text="30000" textWrap="true"></Label>
+                  </GridLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <Button text="Pay now" class="btn btn-primary" (tap)="goToConfirmation()"></Button>
+        <Button text="Continue shopping" class="btn btn-secondary" (tap)="continueShopping()"></Button>
+    </StackLayout>
+</ScrollView>

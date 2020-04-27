@@ -7,7 +7,7 @@
                 <Label row="1" [text]="product.description" textWrap="true" class=""></Label>
                 <GridLayout row="2" columns="*, *">
                   <Label col="0" text="Buying options?" textWrap="true"></Label>
-                  <Label col="1" text="Delete" textWrap="true"></Label>
+                  <Label col="1" text="Delete" textWrap="true" (tap)="onDelete()"></Label>
                 </GridLayout>
             </GridLayout>
         </GridLayout>

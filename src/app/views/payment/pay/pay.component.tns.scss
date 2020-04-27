@@ -1,0 +1,57 @@
+@import '../../../../app-common';
+
+.pay-container {
+    background-color: lighten($primary, 60%);
+    border-color: lighten($primary, 60%);
+    border-width: 1;
+    border-radius: 2;
+    color: $primary;
+
+    .pay-card {
+        margin: 10;
+        background-color: $white;
+        border-radius: 5;
+        padding: 10 0;
+
+        .separator {
+            border-bottom-width: 1;
+            padding-bottom: 10;
+            border-bottom-color: $primary;
+        }
+
+        .title {
+            font-size: 16;
+            font-weight: bold;
+            padding: 0 10;
+        }
+
+        .internal-container {
+            padding: 0 10;
+        }
+
+        .card-item {
+            border-width: 1;
+            border-color: $secondary;
+            border-radius: 2;
+            padding: 20;
+            justify-content: space-between;
+            margin: 10 0;
+
+            .card-image {
+                width: 20;
+                margin-right: 20;
+                flex: 1;
+            }
+
+            .card-description {
+                flex: 1;
+            }
+
+            &.selected {
+                background-color: lighten($primary, 65%);
+            }
+        }
+
+
+    }
+}

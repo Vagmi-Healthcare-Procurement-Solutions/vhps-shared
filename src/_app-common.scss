@@ -52,6 +52,20 @@ $accent: $white;
     text-align: center;
 }
 
+.btn-success {
+    background-color: $primary;
+    color: $accent;
+    border-radius: 20%;
+}
+
+.btn-error {
+    background-color: $accent;
+    color: $primary;
+    border-color: $primary;
+    border-width: 1;
+    border-radius: 20%;
+}
+
 .form {
     vertical-align: middle;
     margin-left: 30;

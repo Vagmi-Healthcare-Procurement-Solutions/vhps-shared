@@ -1,0 +1,9 @@
+@import '../../../../app-common';
+
+.payment-confirmation-container {
+    background-color: lighten($primary, 60%);
+    border-color: lighten($primary, 60%);
+    border-width: 1;
+    border-radius: 2;
+    color: $primary;
+}
