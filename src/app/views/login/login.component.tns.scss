@@ -1,1 +1,33 @@
-/* Add mobile styles for the component here.  */
+.facebook-button {
+    background-color: #4267B2;
+    border-radius: 20%;
+    width: 90%;
+    padding: 0;
+
+    Image {
+        width: 20;
+    }
+
+    Label {
+        color: white;
+        align-self: center;
+        padding-left: 10;
+    }
+}
+
+.google-button {
+    background-color: #4284F4;
+    border-radius: 20%;
+    width: 90%;
+    padding: 0;
+
+    Image {
+        width: 20;
+    }
+
+    Label {
+        color: white;
+        align-self: center;
+        padding-left: 10;
+    }
+} 
