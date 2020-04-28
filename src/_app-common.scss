@@ -16,6 +16,20 @@ $accent-solid: #ffffff;
     font-family: 'FontAwesome', 'Font-Awesome';
 }
 
+.drawer-container {
+    background: $secondary;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20;
+
+    .btn {
+        width: 80%;
+        font-size: 24;
+        height: 45;
+    }
+}
+
 .brand-name {
     color: $primary;
     font-size: large;
