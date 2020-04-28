@@ -9,13 +9,13 @@ export class OffersService {
   offersMock: Offer []= [
     <Offer> {
       id: 1,
-      imageURL: 'https://medicalbazzar.com/image/cache/catalog/Banners/oxy%20906%20X%20450%20(1)-906x460.jpg',
+      imageURL: 'https://previews.123rf.com/images/macrovector/macrovector1907/macrovector190700209/127230205-neurological-medial-health-center-home-page-isometric-horizontal-web-banner-with-hospitalized-patien.jpg',
       shortDescription: 'Oxygize for COVID-19',
       longDescription: 'Oxygize provides you with an easy access to your personal oxygen canisters during this pandemic crisis'
     },
     <Offer> {
       id: 2,
-      imageURL: 'https://medicalbazzar.com/image/cache/catalog/Banners/Physiotherapy%20Clinic%20Setup-906x460.png',
+      imageURL: 'https://st3.depositphotos.com/1006318/13691/v/1600/depositphotos_136918272-stock-illustration-group-medial-doctors-team-clinic.jpg',
       shortDescription: 'Setup your physiotherapy clinit',
       longDescription: 'Setup your physiotherapy clinit at lowest cost'
     },

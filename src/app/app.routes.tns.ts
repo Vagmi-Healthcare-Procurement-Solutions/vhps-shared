@@ -7,6 +7,7 @@ import { DetailsComponent } from "@src/app/views/product/details/details.compone
 import { CartComponent } from "@src/app/views/cart/cart.component";
 import { PayComponent } from "@src/app/views/payment/pay/pay.component";
 import { PaymentConfirmationComponent } from "@src/app/views/payment/payment-confirmation/payment-confirmation.component";
+import { ForgotPasswordComponent } from "@src/app/views/forgot-password/forgot-password.component";
 
 export const routes: Routes = [
   {
@@ -16,6 +17,7 @@ export const routes: Routes = [
   },
   { path: "login", component: LoginComponent },
   { path: "signup", component: SignupComponent },
+  { path: "forgotPassword", component: ForgotPasswordComponent },
   { path: "home", component: HomeComponent },
   { path: "details/:productId", component: DetailsComponent },
   { path: "cart", component: CartComponent },

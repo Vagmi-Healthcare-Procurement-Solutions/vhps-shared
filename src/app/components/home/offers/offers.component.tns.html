@@ -1,12 +1,15 @@
 <StackLayout>
     <Label text="Offers" textWrap="true" class="h2 header-section-label"></Label>
     <ScrollView>
-        <StackLayout>
-            <GridLayout rows="auto, *, *" class="offer-container" *ngFor="let offer of offersList">
-                <Image row="0" class="offer-image" [src]="offer.imageURL"></Image>
-                <Label row="1" [text]="offer.shortDescription" textWrap="true" class="h5"></Label>
-                <Label row="2" [text]="offer.longDescription" textWrap="true"></Label>
-            </GridLayout>
-        </StackLayout>
+        <GridLayout height="200">
+            <Carousel #offersCarousel height="100%" width="100%" [items]="offersList" ios:autoPagingInterval="3"
+                android:indicatorAnimation="swap" indicatorColor="#3b5998" indicatorColorUnselected="#dfe3ee">
+                <CarouselItem *ngFor="let offer of offersList" verticalAlignment="center">
+                    <GridLayout>
+                        <Image [src]="offer.imageURL"></Image>
+                    </GridLayout>
+                </CarouselItem>
+            </Carousel>
+        </GridLayout>
     </ScrollView>
 </StackLayout>

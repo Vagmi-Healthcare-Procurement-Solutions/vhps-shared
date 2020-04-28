@@ -1,8 +1,11 @@
 @import "~@nativescript/theme/core";
 @import "~@nativescript/theme/lemon";
 
-$primary: #1e2775;
-$accent: $white;
+$primary: #3b5998;
+$secondary: #8b9dc3;
+$tertiary: #dfe3ee;
+$accent: #f7f7f7;
+$accent-solid: #ffffff;
 
 // Place any CSS rules you want to apply on both iOS and Android here.
 // This is where the vast majority of your CSS code goes.
@@ -24,8 +27,9 @@ $accent: $white;
     border-color: $primary;
     border-width: 1;
     border-radius: 10%;
-    padding: 10;
+    padding: 5 10;
     font-size: large;
+    height: 40;
 }
 
 .text-label {
@@ -34,7 +38,7 @@ $accent: $white;
 }
 
 .btn {
-    height: 50;
+    height: 40;
     margin: 10 0;
 }
 
