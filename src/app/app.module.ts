@@ -18,6 +18,7 @@ import { CartProductComponent } from '@src/app/components/cart/cart-product/cart
 import { PayComponent } from '@src/app/views/payment/pay/pay.component';
 import { PaymentConfirmationComponent } from '@src/app/views/payment/payment-confirmation/payment-confirmation.component';
 import { ForgotPasswordComponent } from '@src/app/views/forgot-password/forgot-password.component';
+import { CheckboxComponent } from '@src/app/components/ui/checkbox/checkbox.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ForgotPasswordComponent } from '@src/app/views/forgot-password/forgot-p
     PayComponent,
     PaymentConfirmationComponent,
     ForgotPasswordComponent,
+    CheckboxComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,8 @@ import { RouterExtensions } from 'nativescript-angular/router';
   moduleId: module.id
 })
 export class SignupComponent implements OnInit {
+  isVendor: boolean = false;
+  isDelivery: boolean = false;
 
   constructor(private page: Page, private router: RouterExtensions) { }
 
@@ -18,6 +20,14 @@ export class SignupComponent implements OnInit {
 
   onSignIn() {
     this.router.navigate(["login"]);
+  }
+
+  onToggleVendor() {
+    this.isVendor = !this.isVendor;
+  }
+
+  onToggleDelivery() {
+    this.isDelivery = !this.isDelivery;
   }
 
 }

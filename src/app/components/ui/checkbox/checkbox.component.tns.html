@@ -1,0 +1,6 @@
+<StackLayout height="22" orientation="horizontal">
+    <StackLayout class="checkbox-container" [ngClass]="{checked: checked}">
+        <Label text="&#xf00c;" class="fa" *ngIf="checked"></Label>
+    </StackLayout>
+    <Label col="1" [text]="label" textWrap="true" class="text-label"></Label>
+</StackLayout>

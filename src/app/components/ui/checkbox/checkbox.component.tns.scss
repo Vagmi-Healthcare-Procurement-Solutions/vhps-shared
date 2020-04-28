@@ -1,0 +1,15 @@
+@import '../../../../app-common';
+
+.checkbox-container {
+    width: 16;
+    height: 18;
+    border-width: 1;
+    border-radius: 3;
+    padding-left: 1;
+    border-color: $secondary;
+    color: $primary;
+
+    &.checked {
+        border-color: $primary;
+    }
+}
