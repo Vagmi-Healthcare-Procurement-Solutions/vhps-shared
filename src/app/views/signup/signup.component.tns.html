@@ -23,6 +23,12 @@
         <Label row="0" text="Password:" class="text-label"></Label>
         <TextField #password row="1" text="password" returnKeyType="send" maxLength="20" secure="true" class="text-field"></TextField>
     </GridLayout>
+    <GridLayout rows="auto" class="p-y-10 p-x-20" (tap)="onToggleVendor()">
+        <app-checkbox [checked]="isVendor" label="Is vendor?"></app-checkbox>
+    </GridLayout>
+    <GridLayout rows="auto" class="p-y-10 p-x-20" (tap)="onToggleDelivery()">
+        <app-checkbox [checked]="isDelivery" label="Is delivery?"></app-checkbox>
+    </GridLayout>
     <Button text="Sign up" class="btn btn-primary"></Button>
     <Label text="Sign in"
         class="btn btn-secondary" (tap)="onSignIn()"></Label>

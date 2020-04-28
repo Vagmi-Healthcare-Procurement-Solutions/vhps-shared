@@ -20,6 +20,7 @@ import { PayComponent } from '@src/app/views/payment/pay/pay.component';
 import { PaymentConfirmationComponent } from '@src/app/views/payment/payment-confirmation/payment-confirmation.component';
 import { ForgotPasswordComponent } from '@src/app/views/forgot-password/forgot-password.component';
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
+import { CheckboxComponent } from '@src/app/components/ui/checkbox/checkbox.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from 'nativescript-angular/forms';
@@ -45,6 +46,7 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
     PayComponent,
     PaymentConfirmationComponent,
     ForgotPasswordComponent,
+    CheckboxComponent,
   ],
   imports: [
     NativeScriptModule,
