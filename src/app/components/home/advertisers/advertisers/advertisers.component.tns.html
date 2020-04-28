@@ -1,1 +1,15 @@
-<Button text="advertisers works!" class="btn btn-primary"></Button>
+<StackLayout>
+    <Label text="Advertisements" textWrap="true" class="h2 header-section-label"></Label>
+    <ScrollView>
+        <GridLayout height="200">
+            <Carousel #adsCarousel height="100%" width="100%" [items]="adsList" ios:autoPagingInterval="3"
+                android:indicatorAnimation="swap" indicatorColor="#3b5998" indicatorColorUnselected="#dfe3ee">
+                <CarouselItem *ngFor="let ad of adsList" verticalAlignment="center">
+                    <GridLayout>
+                        <Image [src]="ad.imageURL"></Image>
+                    </GridLayout>
+                </CarouselItem>
+            </Carousel>
+        </GridLayout>
+    </ScrollView>
+</StackLayout>

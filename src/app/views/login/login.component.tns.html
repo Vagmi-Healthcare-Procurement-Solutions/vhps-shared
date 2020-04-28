@@ -13,15 +13,15 @@
         </GridLayout>
         <Button text="Login" class="btn btn-primary" (tap)="onLogin()"></Button>
         <Label text="OR" textAlignment="center" textWrap="true" class="p-y-20"></Label>
-        <FlexboxLayout justifyContent="center" class="btn facebook-button">
+        <FlexboxLayout justifyContent="center" class="btn facebook-button" (tap)="onLoginWith()">
             <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/F_icon_reversed.svg/1200px-F_icon_reversed.svg.png"></Image>
             <Label text="Sign in with Facebook" textWrap="true"></Label>
         </FlexboxLayout>
-        <FlexboxLayout justifyContent="center" class="btn google-button">
+        <FlexboxLayout justifyContent="center" class="btn google-button" (tap)="onLoginWith()">
             <Image src="https://img.icons8.com/color/480/google-logo.png"></Image>
             <Label text="Sign in with Google" textWrap="true"></Label>
         </FlexboxLayout>
-        <Label text="Don't haven an account or forget it?"
-            class="btn btn-secondary" (tap)="onSignUp()"></Label>
+        <Label text="Don't have an account or forget it?"
+            class="btn btn-secondary" (tap)="onSignUpOrForgot()"></Label>
     </StackLayout>
 </GridLayout>
