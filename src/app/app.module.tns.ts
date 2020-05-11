@@ -23,10 +23,10 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
 import { CheckboxComponent } from '@src/app/components/ui/checkbox/checkbox.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
-// import { NativeScriptFormsModule } from 'nativescript-angular/forms';
+import { NativeScriptFormsModule } from 'nativescript-angular/forms';
 
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
-// import { NativeScriptHttpClientModule } from 'nativescript-angular/http-client';
+import { NativeScriptHttpClientModule } from 'nativescript-angular/http-client';
 
 @NgModule({
   declarations: [
@@ -52,6 +52,8 @@ import { CheckboxComponent } from '@src/app/components/ui/checkbox/checkbox.comp
     NativeScriptModule,
     AppRoutingModule,
     NativeScriptUISideDrawerModule,
+    NativeScriptHttpClientModule,
+    NativeScriptFormsModule,
     SharedModule
   ],
   providers: [],

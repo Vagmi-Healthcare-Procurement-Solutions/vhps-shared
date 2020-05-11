@@ -5,11 +5,11 @@
         </GridLayout>
         <GridLayout rows="auto, auto">
             <Label row="0" text="User name:" class="text-label"></Label>
-            <TextField row="1" text="user" returnKeyType="next" maxLength="20" autocorrect="false" class="text-field" (returnPressEvent)="focusPassword()"></TextField>
+            <TextField row="1" [(ngModel)]="login.username" returnKeyType="next" maxLength="20" autocorrect="false" class="text-field" (returnPressEvent)="focusPassword()"></TextField>
         </GridLayout>
         <GridLayout rows="auto, auto">
             <Label row="0" text="Password:" class="text-label"></Label>
-            <TextField #password row="1" text="password" returnKeyType="send" maxLength="20" secure="true" class="text-field"></TextField>
+            <TextField #password row="1" [(ngModel)]="login.password" returnKeyType="send" maxLength="20" secure="true" class="text-field"></TextField>
         </GridLayout>
         <Button text="Login" class="btn btn-primary" (tap)="onLogin()"></Button>
         <Label text="OR" textAlignment="center" textWrap="true" class="p-y-20"></Label>
