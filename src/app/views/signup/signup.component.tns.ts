@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page/page';
 import { RouterExtensions } from 'nativescript-angular/router';
+import { UserService } from '@src/app/shared/user/user.service';
+import { User } from '@src/app/shared/user/model/user';
 
 @Component({
   selector: 'app-signup',
@@ -9,13 +11,23 @@ import { RouterExtensions } from 'nativescript-angular/router';
   moduleId: module.id
 })
 export class SignupComponent implements OnInit {
-  isVendor: boolean = false;
-  isDelivery: boolean = false;
+  user: User = <User> {
+    vendor: false,
+    customer: true,
+    delivery: false
+  };
 
-  constructor(private page: Page, private router: RouterExtensions) { }
+  constructor(private page: Page, private router: RouterExtensions, private userService: UserService) { }
 
   ngOnInit() {
     this.page.actionBarHidden=true;
+  }
+
+  onSignUp() {
+    this.userService.signUp(this.user).subscribe(
+      () => this.router.navigate(["login"], {clearHistory: true}),
+      error => console.log(error)
+    );
   }
 
   onSignIn() {
@@ -23,11 +35,11 @@ export class SignupComponent implements OnInit {
   }
 
   onToggleVendor() {
-    this.isVendor = !this.isVendor;
+    this.user.vendor = !this.user.vendor;
   }
 
   onToggleDelivery() {
-    this.isDelivery = !this.isDelivery;
+    this.user.delivery = !this.user.delivery;
   }
 
 }

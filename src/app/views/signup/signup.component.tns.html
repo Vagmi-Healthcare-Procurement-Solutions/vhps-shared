@@ -1,36 +1,47 @@
-<GridLayout>
-  <StackLayout class="form">
-    <GridLayout rows="auto">
-        <Label row="0" text="VHPS" textWrap="true" class="brand-name"></Label>
+<ScrollView>
+    <GridLayout>
+        <StackLayout class="form">
+            <GridLayout rows="auto">
+                <Label row="0" text="VHPS" textWrap="true" class="brand-name"></Label>
+            </GridLayout>
+            <GridLayout rows="auto, auto">
+                <Label row="0" text="First name:" class="text-label"></Label>
+                <TextField row="1" [(ngModel)]="user.firstName" returnKeyType="next" maxLength="20" autocorrect="false"
+                    class="text-field" (returnPressEvent)="focusPassword()"></TextField>
+            </GridLayout>
+            <GridLayout rows="auto, auto">
+                <Label row="0" text="Last name:" class="text-label"></Label>
+                <TextField row="1" [(ngModel)]="user.lastName" returnKeyType="next" maxLength="20" autocorrect="false"
+                    class="text-field" (returnPressEvent)="focusPassword()"></TextField>
+            </GridLayout>
+            <GridLayout rows="auto, auto">
+                <Label row="0" text="Email:" class="text-label"></Label>
+                <TextField row="1" [(ngModel)]="user.email" returnKeyType="next" maxLength="20" autocorrect="false"
+                    class="text-field" (returnPressEvent)="focusPassword()"></TextField>
+            </GridLayout>
+            <GridLayout rows="auto, auto">
+                <Label row="0" text="Phone:" class="text-label"></Label>
+                <TextField row="1" [(ngModel)]="user.phone" returnKeyType="next" maxLength="20" autocorrect="false"
+                    class="text-field" (returnPressEvent)="focusPassword()"></TextField>
+            </GridLayout>
+            <GridLayout rows="auto, auto">
+                <Label row="0" text="User name:" class="text-label"></Label>
+                <TextField row="1" [(ngModel)]="user.username" returnKeyType="next" maxLength="20" autocorrect="false"
+                    class="text-field" (returnPressEvent)="focusPassword()"></TextField>
+            </GridLayout>
+            <GridLayout rows="auto, auto">
+                <Label row="0" text="Password:" class="text-label"></Label>
+                <TextField #password row="1" [(ngModel)]="user.password" returnKeyType="send" maxLength="20"
+                    secure="true" class="text-field"></TextField>
+            </GridLayout>
+            <GridLayout rows="auto" class="p-y-10 p-x-20" (tap)="onToggleVendor()">
+                <app-checkbox [checked]="user.vendor" label="Is vendor?"></app-checkbox>
+            </GridLayout>
+            <GridLayout rows="auto" class="p-y-10 p-x-20" (tap)="onToggleDelivery()">
+                <app-checkbox [checked]="user.delivery" label="Is delivery?"></app-checkbox>
+            </GridLayout>
+            <Button text="Sign up" class="btn btn-primary" (tap)="onSignUp()"></Button>
+            <Label text="Sign in" class="btn btn-secondary" (tap)="onSignIn()"></Label>
+        </StackLayout>
     </GridLayout>
-    <GridLayout rows="auto, auto">
-        <Label row="0" text="First name:" class="text-label"></Label>
-        <TextField row="1" text="firstname" returnKeyType="next" maxLength="20" autocorrect="false" class="text-field" (returnPressEvent)="focusPassword()"></TextField>
-    </GridLayout>
-    <GridLayout rows="auto, auto">
-        <Label row="0" text="Last name:" class="text-label"></Label>
-        <TextField row="1" text="lastname" returnKeyType="next" maxLength="20" autocorrect="false" class="text-field" (returnPressEvent)="focusPassword()"></TextField>
-    </GridLayout>
-    <GridLayout rows="auto, auto">
-        <Label row="0" text="Email:" class="text-label"></Label>
-        <TextField row="1" text="email" returnKeyType="next" maxLength="20" autocorrect="false" class="text-field" (returnPressEvent)="focusPassword()"></TextField>
-    </GridLayout>
-    <GridLayout rows="auto, auto">
-        <Label row="0" text="User name:" class="text-label"></Label>
-        <TextField row="1" text="user" returnKeyType="next" maxLength="20" autocorrect="false" class="text-field" (returnPressEvent)="focusPassword()"></TextField>
-    </GridLayout>
-    <GridLayout rows="auto, auto">
-        <Label row="0" text="Password:" class="text-label"></Label>
-        <TextField #password row="1" text="password" returnKeyType="send" maxLength="20" secure="true" class="text-field"></TextField>
-    </GridLayout>
-    <GridLayout rows="auto" class="p-y-10 p-x-20" (tap)="onToggleVendor()">
-        <app-checkbox [checked]="isVendor" label="Is vendor?"></app-checkbox>
-    </GridLayout>
-    <GridLayout rows="auto" class="p-y-10 p-x-20" (tap)="onToggleDelivery()">
-        <app-checkbox [checked]="isDelivery" label="Is delivery?"></app-checkbox>
-    </GridLayout>
-    <Button text="Sign up" class="btn btn-primary"></Button>
-    <Label text="Sign in"
-        class="btn btn-secondary" (tap)="onSignIn()"></Label>
-  </StackLayout>
-</GridLayout>
+</ScrollView>
