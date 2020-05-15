@@ -27,6 +27,7 @@ import { NativeScriptFormsModule } from 'nativescript-angular/forms';
 
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
 import { NativeScriptHttpClientModule } from 'nativescript-angular/http-client';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { NativeScriptHttpClientModule } from 'nativescript-angular/http-client';
     NativeScriptUISideDrawerModule,
     NativeScriptHttpClientModule,
     NativeScriptFormsModule,
+    ReactiveFormsModule,
     SharedModule
   ],
   providers: [],

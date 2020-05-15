@@ -1,18 +1,27 @@
-<GridLayout>
-    <StackLayout class="form">
-        <GridLayout rows="auto">
-            <Label row="0" text="VHPS" class="brand-name"></Label>
-        </GridLayout>
-        <GridLayout rows="auto, auto">
-            <Label row="0" text="User name:" class="text-label"></Label>
-            <TextField row="1" [(ngModel)]="login.username" returnKeyType="next" maxLength="20" autocorrect="false" class="text-field" (returnPressEvent)="focusPassword()"></TextField>
-        </GridLayout>
-        <GridLayout rows="auto, auto">
-            <Label row="0" text="Password:" class="text-label"></Label>
-            <TextField #password row="1" [(ngModel)]="login.password" returnKeyType="send" maxLength="20" secure="true" class="text-field"></TextField>
-        </GridLayout>
-        <Button text="Login" class="btn btn-primary" (tap)="onLogin()"></Button>
-        <Label text="OR" textAlignment="center" textWrap="true" class="p-y-20"></Label>
+<FlexboxLayout class="form" [formGroup]="loginForm" flexDirection="column">
+    <GridLayout rows="auto">
+        <Label row="0" text="VHPS" class="brand-name"></Label>
+    </GridLayout>
+    <FlexboxLayout flexDirection="column">
+        <Label text="Email:" class="text-label"></Label>
+        <TextField returnKeyType="next" autocorrect="false" class="text-field"
+            autocapitalizationType="none" [ngClass]="{error: emailErrorMessage}" keyboardType="email"
+            formControlName="username"></TextField>
+        <Label [text]="emailErrorMessage" *ngIf="emailErrorMessage" class="login-failed-error m-l-20"></Label>
+    </FlexboxLayout>
+    <GridLayout rows="auto, auto, auto">
+        <Label row="0" text="Password:" class="text-label"></Label>
+        <TextField #password row="1" returnKeyType="send" maxLength="20" secure="true" class="text-field"
+            [ngClass]="{error: passwordErrorMessage}" (returnPress)="onLogin()" formControlName="password"></TextField>
+        <Label row="2" [text]="passwordErrorMessage" *ngIf="passwordErrorMessage"
+            class="login-failed-error p-l-20"></Label>
+    </GridLayout>
+    <FlexboxLayout justifyContent="center" alignItems="center" class="login-failed-error m-b-10" *ngIf="submitErrorMessage">
+        <Label text="&#xf071;" class="fa icon"></Label>
+        <Label [text]="submitErrorMessage" class="text-label"></Label>
+    </FlexboxLayout>
+    <Button text="Login" class="btn btn-primary" (tap)="onLogin()"></Button>
+    <!--Label text="OR" textAlignment="center" textWrap="true" class="p-y-20"></Label>
         <FlexboxLayout justifyContent="center" class="btn facebook-button" (tap)="onLoginWith()">
             <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/F_icon_reversed.svg/1200px-F_icon_reversed.svg.png"></Image>
             <Label text="Sign in with Facebook" textWrap="true"></Label>
@@ -20,8 +29,6 @@
         <FlexboxLayout justifyContent="center" class="btn google-button" (tap)="onLoginWith()">
             <Image src="https://img.icons8.com/color/480/google-logo.png"></Image>
             <Label text="Sign in with Google" textWrap="true"></Label>
-        </FlexboxLayout>
-        <Label text="Don't have an account or forget it?"
-            class="btn btn-secondary" (tap)="onSignUpOrForgot()"></Label>
-    </StackLayout>
-</GridLayout>
+        </FlexboxLayout-->
+    <Label text="Don't have an account or forget it?" class="btn btn-secondary" (tap)="onSignUpOrForgot()"></Label>
+</FlexboxLayout>

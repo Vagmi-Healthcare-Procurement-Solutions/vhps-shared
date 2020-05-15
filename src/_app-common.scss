@@ -6,6 +6,7 @@ $secondary: #8b9dc3;
 $tertiary: #dfe3ee;
 $accent: #f7f7f7;
 $accent-solid: #ffffff;
+$error: #b12323;
 
 // Place any CSS rules you want to apply on both iOS and Android here.
 // This is where the vast majority of your CSS code goes.
@@ -44,6 +45,10 @@ $accent-solid: #ffffff;
     padding: 5 10;
     font-size: large;
     height: 40;
+
+    &.error {
+        border-color: $error;
+    }
 }
 
 .text-label {
@@ -93,4 +98,9 @@ $accent-solid: #ffffff;
 .header-section-label {
     margin: 10;
     color: $primary;
+}
+
+// Reactive forms
+.ng-invalid.ng-touched {
+    border-color: $primary;
 }
